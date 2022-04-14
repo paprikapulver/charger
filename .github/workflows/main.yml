@@ -28,4 +28,4 @@ jobs:
           host: 'https://captain.cloud.tradesg.de'
           password: '${{ secrets.CAPROVER_PASSWORD }}'
           app: 'test-ci-charger'
-          image: 'ghcr.io/tradesg/asset-service-app '
+          image: ghcr.io/${{ github.repository_owner }}/charger  
