@@ -22,3 +22,10 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/charger     
+      - name: CapRover Image Deploy
+        uses: floms/action-caprover@v1
+        with:
+          host: 'https://captain.cloud.tradesg.de'
+          password: '${{ secrets.CAPROVER_PASSWORD }}'
+          app: 'test-ci-charger'
+          image: 'ghcr.io/tradesg/asset-service-app '
