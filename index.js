@@ -29,6 +29,7 @@ const getChargerPlugInfo = async () => {
   return {
     freePlugs: parseInt(rawPlugs[0]),
     overallPlugs: parseInt(rawPlugs[1]),
+    updated: new Date().toJSON()
   };
 };
 
