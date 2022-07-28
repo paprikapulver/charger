@@ -25,7 +25,7 @@ jobs:
       - name: CapRover Image Deploy
         uses: floms/action-caprover@v1
         with:
-          host: 'https://captain.cloud.tradesg.de'
+          host: 'https://captain.cloud.isbill.de'
           password: '${{ secrets.CAPROVER_PASSWORD }}'
-          app: 'test-ci-charger'
+          app: 'prod-lidl-charger'
           image: ghcr.io/${{ github.repository_owner }}/charger  
